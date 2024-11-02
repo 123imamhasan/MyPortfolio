@@ -43,15 +43,35 @@ header ul li a:hover {
     text-align: center;
 }
 
+.intro h2 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
 .hero .social-links a {
     color: #333;
     margin: 0 0.5rem;
     font-size: 1.5rem;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .hero .social-links a:hover {
     color: #ffa500;
+    transform: scale(1.2);
 }
 
 section {
