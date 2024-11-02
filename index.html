@@ -1,65 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=a, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-      <header>
-      <nav>
-         <ul>
-            <li><a href=""></a>1</li>
-            <li><a href=""></a>2</li>
-            <li><a href=""></a>3</li>
-         </ul>
-      </nav>
-   </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
 
-
-   
-    <div class="product">
-        <img src="product-image.jpg" alt="Product Image">
-        <h2>Product Name</h2>
-        <p>Product description goes here. It provides details about the product features and benefits.</p>
-        <div class="price">$19.99</div>
+  <!-- Hero Section -->
+  <section id="home" class="section hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to My Portfolio</h1>
+      <p class="hero-subtitle">A showcase of my work and projects</p>
     </div>
-   
+  </section>
 
-    <h2>Contact Form</h2>
-    <form action="/submit_form" method="post">
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br><br>
-        
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>   
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>This is a placeholder text for the about section. Describe yourself and your skills here.</p>
+  </section>
 
-<h2>Sample Table</h2>
-    <table border="1">
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>Smith</td>
-            <td>30</td>
-        </tr>
-    </table>   
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <h2>My Projects</h2>
+    <div class="project-gallery">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300" alt="Project Image">
+        <h3>Project Title</h3>
+        <p>Project description goes here.</p>
+      </div>
+      <!-- Repeat project cards as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out through any of the platforms listed below.</p>
+    <button class="contact-button">Get in Touch</button>
+  </section>
 
 </body>
 </html>
