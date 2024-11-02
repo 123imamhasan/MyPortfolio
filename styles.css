@@ -213,3 +213,12 @@ section {
     background: #ffa500;
     transform: scale(1.05);
 }
+footer {
+    background: #333; /* Same background as header */
+    color: #fff;      /* Same text color as header */
+    padding: 1rem;    /* Same padding as header */
+    text-align: center;/* Center the text */
+    position: relative; /* Use relative positioning */
+    bottom: 0;        /* Stick to the bottom */
+    width: 100%;      /* Full width */
+}
