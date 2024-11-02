@@ -85,6 +85,9 @@ section {
 }
 
 .skills-list {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:5px;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -125,7 +128,7 @@ section {
     gap: 1rem;
     max-width: 600px;
     margin: auto;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
 }
