@@ -48,8 +48,8 @@ header ul li a:hover {
     border-right: .15em solid orange;
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: .10em;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    letter-spacing: .10.0em;
+    animation: typing 4s steps(37, end), blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -118,7 +118,7 @@ section {
 .about-content {
     display: flex;
     flex-direction: column; /* Changed to column layout */
-    align-items: center; /* Centered content */
+    align-items: center;  /*Centered content */
     padding: 30px; /* Increased padding */ 
     border:  1px solid #ffa500;
     border-radius: 20px; /* More rounded corners */
@@ -151,7 +151,7 @@ section {
 .bio p {
     margin: 15px 0; /* Increased margin for better spacing */
     line-height: 1.8; /* Increased line-height for readability */
-    color: #004d40; /* Darker teal color for text */
+   /* color: #004d40; Darker teal color for text */
 }
 
 
