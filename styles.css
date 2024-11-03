@@ -12,15 +12,15 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     overflow: auto;
-    -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
     position: relative;
     padding-top: 60px; 
 }
 
 /* Dot Style */
 .dot {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background-color: #ffa500;
     border: 1px solid #666;
     border-radius: 50%;
@@ -31,10 +31,10 @@ body {
 
 .dot.fade-out {
     opacity: 0;
-    transform: scale(2.5); /* Dot enlarges when fading out */
+    transform: scale(2.5);
 }
-/* Header */
 
+/* Header */
 header {
     background: #333;
     color: #fff;
@@ -43,7 +43,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it's above other elements */
+    z-index: 1000;
 }
 
 header ul {
@@ -204,6 +204,11 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.nameim {
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap; /* Prevent breaking */
+}
 /* Profile Picture */
 .profile-picture {
     width: 110px;
@@ -216,7 +221,7 @@ section {
 }
 
 .profile-picture:hover {
-    transform: translateY(-30px) scale(2.0); /* Combined transformations */
+    transform: translateY(-30px) scale(2.0);
 }
 
 /* Bio */
@@ -284,7 +289,7 @@ section {
 }
 
 .contact-info a {
-    display: inline-block; /* Change from block to inline-block */
+    display: inline-block;
     color: #333;
     text-decoration: none;
     font-size: 1.2rem;
@@ -295,6 +300,7 @@ section {
 .contact-info a:hover {
     color: #ffa500;
 }
+
 /* Footer */
 footer {
     background: #333;
@@ -305,3 +311,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+

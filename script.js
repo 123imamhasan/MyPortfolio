@@ -45,8 +45,8 @@ function createOrMoveDot(event) {
         setTimeout(() => {
             activeDot.remove();
             activeDot = null;
-        }, 800);
-    }, 1500);
+        }, 1000);
+    }, 2000);
 }
 
 document.addEventListener("click", createOrMoveDot);
