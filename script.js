@@ -16,34 +16,37 @@ function resetAnimation() {
 }
 
 setInterval(resetAnimation, 10000); // 10000 milliseconds = 10 seconds 
+let activeDot = null;  
+let fadeTimeout;
 
-//udhuddudjdfdufjfuf
-function createDot(event) {
-    // ক্লিকের পজিশন ডিটেক্ট করা
-const x = event.clientX;
-const y = event.clientY;
+function createOrMoveDot(event) {
+    const x = event.clientX;
+    const y = event.clientY;
 
-// একটি নতুন ডট তৈরি করা
-const dot = document.createElement("div");
-dot.classList.add("dot");
-dot.style.left = `${x}px`;
-dot.style.top = `${y}px`;
+    if (!activeDot) {
+        activeDot = document.createElement("div");
+        activeDot.classList.add("dot");
 
-// ডটের পজিশন ফিক্সড করা
-dot.style.position = "fixed";
+        activeDot.style.left = `${x}px`;
+        activeDot.style.top = `${y}px`;
+        activeDot.style.position = "fixed";
 
-document.body.appendChild(dot);
+        document.body.appendChild(activeDot);
 
-    // বডিতে ডটটি যোগ করা
-    document.body.appendChild(dot);
+    } else {
+        activeDot.style.left = `${x}px`;
+        activeDot.style.top = `${y}px`;
+    }
 
-    // কিছুক্ষণ পর মিলিয়ে যাওয়ার ক্লাস যোগ করা
-    setTimeout(() => {
-        dot.classList.add("fade-out");
-    }, 100);
+    clearTimeout(fadeTimeout);
 
-    // ৮০০ms পর ডটটি মুছে ফেলা হবে, তবে এ বার DOM ক্লিন করার জন্য রিমুভ করা হবে
-    setTimeout(() => {
-        dot.remove();
-    }, 900);
+    fadeTimeout = setTimeout(() => {
+        activeDot.classList.add("fade-out");
+        setTimeout(() => {
+            activeDot.remove();
+            activeDot = null;
+        }, 800);
+    }, 1500);
 }
+
+document.addEventListener("click", createOrMoveDot);
