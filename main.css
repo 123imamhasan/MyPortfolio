@@ -45,3 +45,35 @@ header ul li a {
 header ul li a:hover {
     color: #ffa500;
 }
+
+
+/* Typing Effect for Hero Section */
+.intro h2 {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0em;
+    animation: typing 4s steps(37, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
