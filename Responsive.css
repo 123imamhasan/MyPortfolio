@@ -1,0 +1,108 @@
+/* Typing Effect for Hero Section */
+.intro h2 {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0em;
+    animation: typing 4s steps(37, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Different Screen Sizes */
+@media only screen and (max-width: 1200px) {
+    /* Adjust project card size */
+    .project-card {
+        width: 250px;
+    }
+    
+    /* Adjust padding in sections */
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-form {
+        flex-direction: column;
+    }
+    
+    .form-group {
+        flex: 1 1 100%;
+    }
+    
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .education-cards {
+        gap: 10px;
+    }
+    
+    .card {
+        padding: 10px;
+    }
+    
+    .about-content {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero {
+        padding: 1rem 0.5rem;
+    }
+    
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .project-card {
+        width: 50%;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        max-width: calc(100% - 1rem); /* Ensure full width minus padding */
+    }
+    
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .project-card .btn {
+        margin: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-info a {
+        font-size: 1rem;
+    }
+}
