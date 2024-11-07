@@ -64,8 +64,11 @@
         margin: 10px;
     }
 
+    .intro h2 {
+    font-size: 18px;
+    }
     .social-links a {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .project-card {

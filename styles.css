@@ -53,7 +53,7 @@ header ul li a:hover {
 }
 
 .intro h2 {
-    font-size: 19px;
+    font-size: 29px;
     overflow: hidden;
     border-right: 0.15em solid orange;
     white-space: nowrap;
@@ -75,7 +75,7 @@ header ul li a:hover {
 .social-links a {
     color: #333;
     margin: 0 0.5rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -97,13 +97,14 @@ header ul li a:hover {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.5s;
     width: 300px;
     text-align: center;
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1) translate(-4px,4px);
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {
