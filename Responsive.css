@@ -56,17 +56,19 @@
     body {
         margin: 0;
     }
-     .hero {
-       top: 80px;
-     }
+
+    .hero {
+        top: 80px;
+    }
 
     .project-cards, .skills-list, .about-content, .education-cards, .contact-form {
         margin: 10px;
     }
 
     .intro h2 {
-    font-size: 18px;
+        font-size: 17px;
     }
+    
     .social-links a {
         font-size: 1.5rem;
     }
